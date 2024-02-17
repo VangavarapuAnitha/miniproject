@@ -1,0 +1,24 @@
+.navbar-container {
+  position: relative;
+  /* padding-top: 40px; */
+}
+.navbar-logo-container {
+  padding-left: 30px;
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+ul {
+  list-style-type: none;
+  position: relative;
+  top: 0;
+  float: right;
+  right: 100px;
+  height: 80px;
+  display: flex;
+}
+li {
+  display: flex;
+  padding: 20px 20px;
+}
