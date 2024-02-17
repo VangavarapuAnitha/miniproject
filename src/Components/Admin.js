@@ -60,6 +60,12 @@ const Admin = () => {
       areasOfTeaching: "",
     });
   };
+  const handleDelete = (id) => {
+    const updatedData = tableData.filter((data) => data.id !== id);
+
+    setTableData(updatedData);
+    localStorage.setItem("formData", JSON.stringify(updatedData));
+  };
 
   return (
     <div>
@@ -142,10 +148,9 @@ const Admin = () => {
               <td>{data.email}</td>
               <td>{data.teachingExperiance}</td>
               <td>{data.areasOfTeaching}</td>
-              {/* <td>
-                <button onClick={() => handleEdit(data.id)}>Edit</button>
+              <td>
                 <button onClick={() => handleDelete(data.id)}>Delete</button>
-              </td> */}
+              </td>
             </tr>
           ))}
         </tbody>
