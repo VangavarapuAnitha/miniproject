@@ -1,5 +1,3 @@
-// src/components/FormLocalStorage.js
-
 import React, { useState, useEffect } from "react";
 import "./Admin.css";
 
@@ -68,9 +66,10 @@ const Admin = () => {
   };
 
   return (
-    <div>
-      <h2>Form and Local Storage Example</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="admin-container">
+      <h2> Add Staff Details</h2>
+
+      <form onSubmit={handleSubmit} className="form-container">
         <label>Id:</label>
         <input
           type="text"
@@ -121,11 +120,12 @@ const Admin = () => {
           value={formData.areasOfTeaching}
           onChange={handleInputChange}
         />
-
-        <button type="submit">Submit</button>
+        <div>
+          <button type="submit">ADD</button>
+        </div>
       </form>
 
-      <h3>Table</h3>
+      <h3>Staff Details</h3>
       <table>
         <thead>
           <tr>

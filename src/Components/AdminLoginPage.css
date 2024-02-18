@@ -1,0 +1,22 @@
+.AdminLoginPage {
+  position: relative;
+  top: 150px;
+}
+/* Style form labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Style form input fields */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -1,6 +1,6 @@
 .navbar-container {
   position: relative;
-  /* padding-top: 40px; */
+  top: 20px;
 }
 .navbar-logo-container {
   padding-left: 30px;

@@ -1,3 +1,8 @@
+.admin-container {
+  position: relative;
+  top: 70px;
+}
+
 /* Apply styles to the entire table */
 table {
   width: 100%;
@@ -25,3 +30,65 @@ td {
 }
 
 /* Add additional styles as needed */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color and some spacing to the entire page */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Style the form container */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Style form input fields */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style form submit button */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Add some spacing between form elements */
+.form-container > * {
+  margin-bottom: 16px;
+}

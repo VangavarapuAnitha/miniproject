@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import { toast } from "react-toastify";
-// import "./AdminLoginPage.css";
+
+import "./AdminLoginPage.css";
 import { useNavigate } from "react-router-dom";
 
 const AdminLoginPage = () => {
@@ -37,23 +37,22 @@ const AdminLoginPage = () => {
 
   return (
     <div className="AdminLoginPage">
-      <form>
+      <form className="form-container">
         <h1>Admin Login ?</h1>
-        <div className="input-box">
+        <div>
+          <label>UserName:</label>
           <input
             type="text"
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Username"
-            // required
           />
           {errors.username && <div className="error">{errors.username}</div>}
-        </div>
-        <div className="input-box">
+
+          <label>Password</label>
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
-            // required
           />
           {errors.password && <div className="error">{errors.password}</div>}
         </div>
