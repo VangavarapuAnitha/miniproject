@@ -9,7 +9,7 @@ import Admin from "./Components/Admin";
 function App() {
   return (
     <div className="App">
-      <h1>MCA Staff Management System</h1>
+      <h1>MCA Faculty Information System</h1>
       <BrowserRouter>
         <Navbar />
         <Routes>
